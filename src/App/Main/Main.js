@@ -1,5 +1,5 @@
 import "./Main";
-import "./Main.css";
+import styles from "./Main.module.css";
 import Farcry from "../Main/popular_recommended/Farcry.jpg";
 import Dayz from "../Main/popular_recommended/Dayz.jpg";
 import Pubg from "../Main/popular_recommended/Pubg.jpg";
@@ -20,19 +20,19 @@ import freetoplay from "../Main/categories/freetoplay.png";
 import horror from "../Main/categories/horror.png";
 const Main = () => {
   return (
-    <div className="Main">
+    <div className={styles.Main}>
       {/* Популярное и рекомендуемое */}
-      <div className="section_title">Популярное и рекомендуемое</div>
-      <div className="popular_recommended_games">
+      <div className={styles.title}>Популярное и рекомендуемое</div>
+      <div className={styles.popular_recommended_games}>
         <a
           href="https://store.steampowered.com/agecheck/app/2369390/"
           target="blank"
           alt="Farcry"
         >
           <img src={Farcry} alt="Farcry" />
-          <div className="info_table_games_popular_recommended">
-            <p>Far Cry® 6</p>
-            <span>1500 руб.</span>
+          <div className={styles.info_about_game}>
+            <p className={styles.game_name}>Far Cry® 6</p>
+            <span className={styles.game_cost}>1500 руб.</span>
           </div>
         </a>
 
@@ -42,9 +42,9 @@ const Main = () => {
           alt="Dayz"
         >
           <img src={Dayz} alt="Dayz" />
-          <div className="info_table_games_popular_recommended">
-            <p>DayZ</p>
-            <span>2300 руб.</span>
+          <div className={styles.info_about_game}>
+            <p className={styles.game_name}>DayZ</p>
+            <span className={styles.game_cost}>2300 руб.</span>
           </div>
         </a>
         <a
@@ -53,9 +53,9 @@ const Main = () => {
           alt="Pubg"
         >
           <img src={Pubg} alt="Pubg" />
-          <div className="info_table_games_popular_recommended">
-            <p>PUBG: BATTLEGROUNDS</p>
-            <span>Бесплатно</span>
+          <div className={styles.info_about_game}>
+            <p className={styles.game_name}>PUBG: BATTLEGROUNDS</p>
+            <span className={styles.game_cost}>Бесплатно</span>
           </div>
         </a>
         <a
@@ -64,9 +64,9 @@ const Main = () => {
           alt="Rust"
         >
           <img src={Rust} alt="Rust" />
-          <div className="info_table_games_popular_recommended">
-            <p>Rust</p>
-            <span>3000 руб.</span>
+          <div className={styles.info_about_game}>
+            <p className={styles.game_name}>Rust</p>
+            <span className={styles.game_cost}>3000 руб.</span>
           </div>
         </a>
         <a
@@ -75,24 +75,29 @@ const Main = () => {
           alt="VoidTrain"
         >
           <img src={VoidTrain} alt="VoidTrain" />
-          <div className="info_table_games_popular_recommended">
-            <p>VoidTrain</p>
-            <span>300 руб.</span>
+          <div className={styles.info_about_game}>
+            <p className={styles.game_name}>VoidTrain</p>
+            <span className={styles.game_cost}>300 руб.</span>
           </div>
         </a>
       </div>
 
       {/* Специальные предложения */}
 
-      <div className="section_title">Специальные предложения</div>
-      <div className="special_offers_games">
+      <div className={styles.title}>Специальные предложения</div>
+      <div className={styles.special_offers_games}>
         <a href="https://store.steampowered.com/sale/anno/">
-          <img src={Anno} className="img_games" alt="Anno" target="blank" />
-          <div className="info_table_games_special_offers">
+          <img
+            src={Anno}
+            className={styles.img_games}
+            alt="Anno"
+            target="blank"
+          />
+          <div className={styles.info_table_games_special_offers}>
             <p>Акция на выходных</p>
-            <span className="end_of_sale">Заканчивается в 21:00.</span>
-            <div className="background_price_table">
-              <span className=" info_table_games_special_offers_price">
+            <span className={styles.end_of_sale}>Заканчивается в 21:00.</span>
+            <div className={styles.background_price_table}>
+              <span className={styles.info_table_games_special_offers_price}>
                 257 руб.
               </span>
             </div>
@@ -101,15 +106,15 @@ const Main = () => {
         <a href="https://store.steampowered.com/app/454650/DRAGON_BALL_XENOVERSE_2/">
           <img
             src={DragonBall2}
-            className="img_games"
+            className={styles.img_games}
             alt="DragonBall2"
             target="blank"
           />
-          <div className="info_table_games_special_offers">
+          <div className={styles.info_table_games_special_offers}>
             <p>Акция на выходных</p>
-            <span className="end_of_sale">Заканчивается в 21:00.</span>
-            <div className="background_price_table">
-              <span className=" info_table_games_special_offers_price">
+            <span className={styles.end_of_sale}>Заканчивается в 21:00.</span>
+            <div className={styles.background_price_table}>
+              <span className={styles.info_table_games_special_offers_price}>
                 320 руб.
               </span>
             </div>
@@ -118,15 +123,15 @@ const Main = () => {
         <a href="https://store.steampowered.com/agecheck/app/2369390/">
           <img
             src={FarCry6}
-            className="img_games"
+            className={styles.img_games}
             alt="FarCry6"
             target="blank"
           />
-          <div className="info_table_games_special_offers">
+          <div className={styles.info_table_games_special_offers}>
             <p>Акция на выходных</p>
-            <span className="end_of_sale">Заканчивается в 21:00.</span>
-            <div className="background_price_table">
-              <span className=" info_table_games_special_offers_price">
+            <span className={styles.end_of_sale}>Заканчивается в 21:00.</span>
+            <div className={styles.background_price_table}>
+              <span className={styles.info_table_games_special_offers_price}>
                 480 руб.
               </span>
             </div>
@@ -135,27 +140,32 @@ const Main = () => {
         <a href="https://www.youtube.com/watch?v=aZWWlqDy8nE">
           <img
             src={Taction}
-            className="img_games"
+            className={styles.img_games}
             alt="Taction"
             target="blank"
           />
-          <div className="info_table_games_special_offers">
+          <div className={styles.info_table_games_special_offers}>
             <p>Акция на выходных</p>
-            <span className="end_of_sale">Заканчивается в 21:00.</span>
-            <div className="background_price_table">
-              <span className=" info_table_games_special_offers_price">
+            <span className={styles.end_of_sale}>Заканчивается в 21:00.</span>
+            <div className={styles.background_price_table}>
+              <span className={styles.info_table_games_special_offers_price}>
                 560 руб.
               </span>
             </div>
           </div>
         </a>
         <a href="https://store.steampowered.com/sale/anno/">
-          <img src={Team17} className="img_games" alt="Team17" target="blank" />
-          <div className="info_table_games_special_offers">
+          <img
+            src={Team17}
+            className={styles.img_games}
+            alt="Team17"
+            target="blank"
+          />
+          <div className={styles.info_table_games_special_offers}>
             <p>Акция на выходных</p>
-            <span className="end_of_sale">Заканчивается в 21:00.</span>
-            <div className="background_price_table">
-              <span className=" info_table_games_special_offers_price">
+            <span className={styles.end_of_sale}>Заканчивается в 21:00.</span>
+            <div className={styles.background_price_table}>
+              <span className={styles.info_table_games_special_offers_price}>
                 700 руб.
               </span>
             </div>
@@ -165,115 +175,139 @@ const Main = () => {
 
       {/* Категории */}
 
-      <div className="section_title">Категории</div>
-      <div className="categories_games">
-        <div className="img_games_categories">
+      <div className={styles.title}>Категории</div>
+      <div className={styles.categories_games}>
+        <div className={styles.img_games_categories}>
           <a
             href="https://store.steampowered.com/category/action"
-            className="content_hub_capsule_ctn"
+            className={styles.content_hub_capsule_ctn}
             alt="action"
             target="blank"
           >
-            <div className="color_for_categories_games color_for_categories_games-red"></div>
-            <img src={action} className="categories_img" alt="action" />
-            <div className="game_name">
-              <p className="categories_games_link">Ролевые игры</p>
+            <div
+              className={`${styles.color_for_categories_games} ${styles.color_for_categories_games_red}`}
+            ></div>
+            <img src={action} className={styles.categories_img} alt="action" />
+            <div className={styles.categories_games_section}>
+              <p className={styles.categories_games_link}>Ролевые игры</p>
             </div>
           </a>
           <a
             href="https://store.steampowered.com/category/adventure"
-            className="content_hub_capsule_ctn"
+            className={styles.content_hub_capsule_ctn}
             alt="adventure"
             target="blank"
           >
-            <div className="color_for_categories_games color_for_categories_games-yellow"></div>
-            <img src={adventure} className="categories_img" alt="adventure" />
-            <div className="game_name">
-              <p className="categories_games_link">Приключения</p>
+            <div
+              className={`${styles.color_for_categories_games} ${styles.color_for_categories_games_yellow}`}
+            ></div>
+            <img
+              src={adventure}
+              className={styles.categories_img}
+              alt="adventure"
+            />
+            <div className={styles.categories_games_section}>
+              <p className={styles.categories_games_link}>Приключения</p>
             </div>
           </a>
           <a
             href="https://store.steampowered.com/category/anime"
-            className="content_hub_capsule_ctn"
+            className={styles.content_hub_capsule_ctn}
             alt="anime"
             target="blank"
           >
-            <div className="color_for_categories_games color_for_categories_games-blue"></div>
-            <img src={anime} className="categories_img" alt="anime" />
-            <div className="game_name">
-              <p className="categories_games_link">Аниме</p>
+            <div
+              className={`${styles.color_for_categories_games} ${styles.color_for_categories_games_purple}`}
+            ></div>
+            <img src={anime} className={styles.categories_img} alt="anime" />
+            <div className={styles.categories_games_section}>
+              <p className={styles.categories_games_link}>Аниме</p>
             </div>
           </a>
           <a
             href="https://store.steampowered.com/cooperatives/"
-            className="content_hub_capsule_ctn"
+            className={styles.content_hub_capsule_ctn}
             alt="cooperatives"
             target="blank"
           >
-            <div className="color_for_categories_games color_for_categories_games-green"></div>
+            <div
+              className={`${styles.color_for_categories_games} ${styles.color_for_categories_games_green}`}
+            ></div>
             <img
               src={cooperatives}
-              className="categories_img"
+              className={styles.categories_img}
               alt="cooperatives"
             />
-            <div className="game_name">
-              <p className="categories_games_link">Кооперативы</p>
+            <div className={styles.categories_games_section}>
+              <p className={styles.categories_games_link}>Кооперативы</p>
             </div>
           </a>
           <a
             href="https://store.steampowered.com/exploration_open_world/"
-            className="content_hub_capsule_ctn"
+            className={styles.content_hub_capsule_ctn}
             alt="exploration_open_world"
             target="blank"
           >
-            <div className="color_for_categories_games color_for_categories_games-cyan"></div>
+            <div
+              className={`${styles.color_for_categories_games} ${styles.color_for_categories_games_cyan}`}
+            ></div>
             <img
               src={exploration_open_world}
-              className="categories_img"
+              className={styles.categories_img}
               alt="exploration_open_world"
             />
-            <div className="game_name">
-              <p className="categories_games_link">Открытый мир</p>
+            <div className={styles.categories_games_section}>
+              <p className={styles.categories_games_link}>Открытый мир</p>
             </div>
           </a>
           <a
             href="https://store.steampowered.com/fighting_martial_arts/"
-            className="content_hub_capsule_ctn"
+            className={styles.content_hub_capsule_ctn}
             alt="fighting_martial_arts"
             target="blank"
           >
-            <div className="color_for_categories_games color_for_categories_games-purple"></div>
+            <div
+              className={`${styles.color_for_categories_games} ${styles.color_for_categories_games_purple}`}
+            ></div>
             <img
               src={fighting_martial_arts}
-              className="categories_img"
+              className={styles.categories_img}
               alt="fighting_martial_arts"
             />
-            <div className="game_name">
-              <p className="categories_games_link">Открытый мир</p>
+            <div className={styles.categories_games_section}>
+              <p className={styles.categories_games_link}>Открытый мир</p>
             </div>
           </a>
           <a
             href="https://store.steampowered.com/freetoplay/"
-            className="content_hub_capsule_ctn"
+            className={styles.content_hub_capsule_ctn}
             alt="freetoplay"
             target="blank"
           >
-            <div className="color_for_categories_games color_for_categories_games-orange"></div>
-            <img src={freetoplay} className="categories_img" alt="freetoplay" />
-            <div className="game_name">
-              <p className="categories_games_link">Открытый мир</p>
+            <div
+              className={`${styles.color_for_categories_games} ${styles.color_for_categories_games_orange}`}
+            ></div>
+            <img
+              src={freetoplay}
+              className={styles.categories_img}
+              alt="freetoplay"
+            />
+            <div className={styles.categories_games_section}>
+              <p className={styles.categories_games_link}>Открытый мир</p>
             </div>
           </a>
           <a
             href="https://store.steampowered.com/horror/"
-            className="content_hub_capsule_ctn"
+            className={styles.content_hub_capsule_ctn}
             alt="horror"
             target="blank"
           >
-            <div className="color_for_categories_games color_for_categories_games-red"></div>
-            <img src={horror} className="categories_img" alt="horror" />
-            <div className="game_name">
-              <p className="categories_games_link">Открытый мир</p>
+            <div
+              className={`${styles.color_for_categories_games} ${styles.color_for_categories_games_red}`}
+            ></div>
+            <img src={horror} className={styles.categories_img} alt="horror" />
+            <div className={styles.categories_games_section}>
+              <p className={styles.categories_games_link}>Открытый мир</p>
             </div>
           </a>
         </div>
