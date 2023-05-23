@@ -1,0 +1,257 @@
+.Main {
+  display: grid;
+  grid-area: m;
+}
+
+.popular_recommended_games {
+  overflow-x: scroll;
+  overflow-y: hidden;
+  box-sizing: content-box;
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 13px;
+  margin-bottom: 36px;
+  padding-bottom: 10px;
+  overflow: hidden;
+}
+
+.section_title {
+  text-transform: uppercase;
+}
+
+.popular_recommended_games img {
+  overflow-x: scroll;
+  overflow-y: hidden;
+  box-sizing: content-box;
+  display: flex;
+  flex-wrap: nowrap;
+  max-width: 272px;
+}
+
+.info_table_games_popular_recommended {
+  max-width: 272px;
+  height: 40px;
+  color: #e5e5e5;
+  background: linear-gradient(9deg, #2e5f6a, #228dc6);
+}
+
+.info_table_games_popular_recommended p {
+  font-size: 13px;
+  padding-left: 15px;
+  padding-top: 5px;
+  line-height: 13px;
+  font-weight: 800;
+}
+
+.info_table_games_popular_recommended span {
+  font-size: 11px;
+  padding-left: 20px;
+}
+
+.img_games {
+  max-width: 180px;
+}
+
+.info_table_games_special_offers {
+  max-width: 180px;
+  height: 60px;
+  color: #e5e5e5;
+  padding-bottom: 10px;
+  background: linear-gradient(45deg, #4b1919, #9a1434);
+}
+
+.info_table_games_special_offers p {
+  font-size: 11px;
+  margin-left: 10px;
+  padding-top: 8px;
+  text-transform: uppercase;
+}
+
+.end_of_sale {
+  font-size: 9px;
+  margin-left: 10px;
+  padding-top: 8px;
+}
+
+.background_price_table {
+  position: relative;
+  width: 50px;
+  height: 14px;
+  background-color: #171a21;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2px;
+  margin-left: 10px;
+  display: flex;
+}
+
+.info_table_games_special_offers_price {
+  color: #aad248;
+  position: absolute;
+  display: block;
+  font-size: 9px;
+}
+
+.special_offers_games {
+  overflow-x: scroll;
+  overflow-y: hidden;
+  box-sizing: content-box;
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 13px;
+  margin-bottom: 36px;
+  padding-bottom: 10px;
+  overflow: hidden;
+}
+.categories_games {
+  margin-bottom: 36px;
+  box-sizing: content-box;
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 13px;
+  margin-bottom: 36px;
+  padding-bottom: 10px;
+
+  overflow-y: hidden;
+}
+
+.img_games_categories {
+  position: relative;
+  display: flex;
+  margin-bottom: 36px;
+  box-sizing: content-box;
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 13px;
+  margin-bottom: 36px;
+  padding-bottom: 10px;
+}
+
+.content_hub_capsule_ctn {
+  position: relative;
+}
+
+.categories_img {
+  position: relative;
+}
+
+.color_for_categories_games {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+}
+
+.game_name {
+  position: absolute;
+  bottom: 16px;
+  text-align: center;
+  width: 100%;
+  padding-bottom: 15px;
+  z-index: 3;
+}
+
+.categories_games_link {
+  font-size: 16px;
+  font-weight: bold;
+  letter-spacing: 0.1ch;
+  color: white;
+  text-shadow: 0 1px 3px rgb(0 0 0 / 50%);
+  text-transform: uppercase;
+}
+
+.color_for_categories_games-red {
+  background-image: -webkit-linear-gradient(
+    90deg,
+    rgb(169, 8, 8) 0%,
+    rgba(255, 255, 255, 0.13) 87%
+  );
+}
+
+.color_for_categories_games-yellow {
+  background-image: -webkit-linear-gradient(
+    90deg,
+    rgb(169, 169, 8) 0%,
+    rgba(255, 255, 255, 0.13) 87%
+  );
+}
+
+.color_for_categories_games-blue {
+  background-image: -webkit-linear-gradient(
+    90deg,
+    rgb(8, 8, 169) 0%,
+    rgba(255, 255, 255, 0.13) 87%
+  );
+}
+
+.color_for_categories_games-green {
+  background-image: -webkit-linear-gradient(
+    90deg,
+    rgb(46, 169, 8) 0%,
+    rgba(255, 255, 255, 0.13) 87%
+  );
+}
+
+.color_for_categories_games-cyan {
+  background-image: -webkit-linear-gradient(
+    90deg,
+    rgb(8, 126, 169) 0%,
+    rgba(255, 255, 255, 0.13) 87%
+  );
+}
+
+.color_for_categories_games-purple {
+  background-image: -webkit-linear-gradient(
+    90deg,
+    rgb(107, 8, 169) 0%,
+    rgba(255, 255, 255, 0.13) 87%
+  );
+}
+
+.color_for_categories_games-orange {
+  background-image: -webkit-linear-gradient(
+    90deg,
+    rgb(169, 89, 8) 0%,
+    rgba(255, 255, 255, 0.13) 87%
+  );
+}
+.popular_sections_background {
+  background: linear-gradient(9deg, #3f8ea0, #228dc6);
+}
+
+.popular_sections_background a {
+  color: #e5e5e5;
+}
+
+.popular_sections_columns {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 8px;
+  margin-bottom: 16px;
+}
+
+.popular_sections_link {
+  font-size: 16px;
+  font-weight: bold;
+  letter-spacing: 0.1ch;
+  color: white;
+  text-shadow: 0 1px 3px rgb(0 0 0 / 50%);
+  text-transform: uppercase;
+}
+
+.popular_sections_background {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 58px;
+  font-family: "Motiva Sans", Sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+  color: #ffffff;
+  text-transform: uppercase;
+  font-weight: 500;
+  letter-spacing: 0.03em;
+  text-align: center;
+  border-radius: 3px;
+  box-shadow: 0 0 4px #000;
+}
